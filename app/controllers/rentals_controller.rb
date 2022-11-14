@@ -16,3 +16,10 @@ class RentalsController < ApplicationController
         rental.save
         serialize(Rental.last)
       end
+
+      post '/rentals' do
+        rental=Rental.new(params)
+        rental.price.to_i
+        rental.save
+        serialize(Rental.last)
+      end
