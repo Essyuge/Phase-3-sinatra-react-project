@@ -12,4 +12,6 @@ end
 use Rack::JSONBodyParser
 
 # Our application
+use OwnersController
+use RentalsController
 run ApplicationController
