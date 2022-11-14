@@ -36,3 +36,11 @@ class RentalsController < ApplicationController
         rental.destroy
         rental.to_json
       end
+      private
+
+def  serialize(object)
+object.to_json(include: :owner)
+
+end
+
+end
