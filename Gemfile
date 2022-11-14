@@ -16,6 +16,11 @@ gem "rack-contrib", "~> 2.3"
 # https://github.com/cyu/rack-cors
 gem "rack-cors", "~> 1.1"
 
+
+gem "faker"
+
+gem "bcrypt"
+
 # An object-relational mapper
 # https://guides.rubyonrails.org/active_record_basics.html
 gem "activerecord", "~> 6.1"
@@ -29,14 +34,15 @@ gem "sinatra-activerecord", "~> 2.0"
 gem "rake", "~> 13.0"
 
 # Provides functionality to interact with a SQLite3 database
-gem "sqlite3", "~> 1.4"
+gem "pry", "~> 0.14.1"
 
+gem "shotgun"
 # Require all files in a folder
 gem "require_all", "~> 3.0"
 
 # These gems will only be used when we are running the application locally
 group :development do
-  gem "pry", "~> 0.14.1"
+ gem "sqlite3", "~> 1.4"
 
   # Automatically reload when there are changes
   # https://github.com/alexch/rerun
