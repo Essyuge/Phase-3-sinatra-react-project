@@ -5,3 +5,7 @@ class RentalsController < ApplicationController
         #binding.pry
        serialize(Rental.all.order("id ASC"))
     end
+    
+    get "/rentals/:id" do
+        serialize(Rental.find_by_id(params[:id]))
+     end
