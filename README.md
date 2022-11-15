@@ -5,7 +5,7 @@
 
 **Project Name:** Find A Motel.
 
-**Project Site:** https://phase-3-project-evbx-l9zwur1yd-kipkemoi98.vercel.app/
+**Project Site:** https://find-a-motel.netlify.app/
 
 **Backend host:** http://find-a-motel.herokuapp.com/rentals
 
